@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fahrenheit Converter</title>
+</head>
+<body>
+
+    <script> 
+   
+   "use strict"
+
+   alert ("Конвертер в градусы Фаренгейта")
+    let valueTc = +prompt("Введите температуру по Цельсию (например: 5 или -5)"); 
+    let result;
+    
+        for (let i = 0; i<3; i++) { 
+         if (valueTc >= 0 || valueTc < 0) { 
+                result = Math.floor((9/5) * valueTc + 32);
+                alert (valueTc + "° по Цельсию" + " = " + result + "° по Фаренгейту");
+                break
+                }
+
+        else {
+                valueTc = +prompt("Введите температуру по Цельсию в ЧИСЛОВОМ формате (например: 5 или -5)");
+            }
+    
+        }
+
+    alert ("Чтобы запустить программу снова, нажмите F5. Для выхода нажмите ОК"); 
+
+            
+   
+    </script>
+    
+</body>
+</html>
