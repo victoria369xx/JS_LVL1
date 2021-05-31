@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+    <script>
+        /*Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation),
+где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от
+переданного значения операции (использовать switch) выполнить одну из арифметических операций
+(использовать функции из задания 4) и вернуть полученное значение. */
+
+        'use strict'
+        
+       function mathOperation (arg1, arg2, operation) {
+           
+        switch (operation) {
+               case 'sum': 
+                  return arg1 + arg2;
+                  break; 
+
+               case 'sub':
+                   return arg1 - arg2;
+                   break;
+
+               case 'mul':
+                   return arg1*arg2;
+                   break; 
+                
+                case 'div':
+                    return arg1/arg2; 
+                    break; 
+                
+                default: alert("Такой операции нет, введите sum, sub, mul или div");
+
+        }
+    
+       }     
+         let result = mathOperation (22, 1, 'mul');
+         alert(result);
+
+    </script>
+</body>
+</html>
